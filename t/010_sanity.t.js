@@ -1,32 +1,25 @@
 StartTest(function(t) {
     
-	t.plan(2)
+    //======================================================================================================================================================================================================================================================
+    t.diag('Sanity')
     
-    var async0 = t.beginAsync()
+    t.ok(Data.UUID, "Data.UUID is here")
     
-    use('Data.UUID', function () {
+    var uuids       = {}
+    var passed      = true
+    
+    
+    for (var i = 0; i < 1000; i++) {
         
-        //======================================================================================================================================================================================================================================================
-        t.diag('Sanity')
+        var uuid = Data.UUID.my.uuid()
         
-        t.ok(Data.UUID, "Data.UUID is here")
+        if (uuids[uuid]) passed = false
         
-        var uuids       = {}
-        var passed      = true
-        
-        
-        for (var i = 0; i < 1000; i++) {
-            
-            var uuid = Data.UUID.my.uuid()
-            
-            if (uuids[uuid]) passed = false
-            
-            uuids[uuid] = true
-        }
-        
-        
-        t.ok(passed, 'No duplicates in 1000 generated UUIDs')
-        
-        t.endAsync(async0)
-    })
+        uuids[uuid] = true
+    }
+    
+    
+    t.ok(passed, 'No duplicates in 1000 generated UUIDs')
+    
+    t.done()
 })    
