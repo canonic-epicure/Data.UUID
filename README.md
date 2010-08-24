@@ -9,6 +9,14 @@ SYNOPSIS
 ========
 
         var uuid = Data.UUID.my.uuid()
+        
+        
+        Class('Some.Class', {
+        
+            has : {
+                id  : Joose.I.UUID
+            }
+        })
 
 
 DESCRIPTION
@@ -18,13 +26,19 @@ DESCRIPTION
 conforming to RFC4122v4.
 
 
+Also this package define an `Joose.I.UUID` attribute initializer, which is as simple as:
+    
+    Joose.I.UUID = function () { return Data.UUID.uuid() }
+    
+You can use it to initialize attributes which holds the UUID.
+
 
 GETTING HELP
 ============
 
 This extension is supported via github issues tracker: <http://github.com/SamuraiJack/Data-UUID/issues>
 
-For general Joose questions you can also visit #joose on irc.freenode.org or the forum at: [http://joose.it/forum](http://joose.it/forum)
+For general Joose questions you can also visit #joose on irc.freenode.org or the forum at: <http://joose.it/forum>
  
 
 
@@ -41,7 +55,7 @@ BUGS
 
 All complex software has bugs lurking in it, and this module is no exception.
 
-Please report any bugs through the web interface at [http://github.com/SamuraiJack/Data-UUID/issues](http://github.com/SamuraiJack/Data-UUID/issues)
+Please report any bugs through the web interface at <http://github.com/SamuraiJack/Data-UUID/issues>
 
 
 

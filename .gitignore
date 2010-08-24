@@ -8,4 +8,5 @@ Makefile.PL
 /doc/*
 /inc/*
 /META.json
-/Data.UUID-*.tar.gz
+/Data-UUID-*
+/Data-UUID-*.tar.gz

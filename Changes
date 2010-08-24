@@ -1,5 +1,10 @@
 Revision history for Data.UUID
 
+{{ $NEXT }}
+
+    - added `Joose.I.UUID` initializer
+    - switched to Dist::Zilla for distribution management
+
 
 0.01   Sat, Apr 17, 2010
 
