@@ -1,6 +1,8 @@
 Revision history for Data.UUID
 
 {{ $NEXT }}
+    
+    - dual OpenJSAN/npm release
 
 0.02      2010-08-24 18:57
 
