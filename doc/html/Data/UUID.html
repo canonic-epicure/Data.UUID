@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="http://bit.ly/multi_markdown_style_css " />
+	</head>
+<body>
+<h1 id="name">Name</h1>
+
+<p>Data.UUID - provides RFC4122v4 complaint UUIDs</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code>    var uuid = Data.UUID.my.uuid()
+
+
+    Class('Some.Class', {
+
+        has : {
+            id  : Joose.I.UUID
+        }
+    })
+</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>Data.UUID</code> is a very simple class, containing a single static method - <code>uuid</code>, which return the string represenation of UUID,
+conforming to RFC4122v4.</p>
+
+<p>Also this package define an <code>Joose.I.UUID</code> attribute initializer, which is as simple as:</p>
+
+<pre><code>Joose.I.UUID = function () { return Data.UUID.uuid() }
+</code></pre>
+
+<p>You can use it to initialize attributes which holds the UUID.</p>
+
+<h1 id="gettinghelp">GETTING HELP</h1>
+
+<p>This extension is supported via github issues tracker: <a href="http://github.com/SamuraiJack/Data-UUID/issues">http://github.com/SamuraiJack/Data-UUID/issues</a></p>
+
+<p>For general Joose questions you can also visit #joose on irc.freenode.org or the forum at: <a href="http://joose.it/forum">http://joose.it/forum</a></p>
+
+<h1 id="seealso">SEE ALSO</h1>
+
+<p>Web page of this module: <a href="http://github.com/SamuraiJack/Data-UUID/">http://github.com/SamuraiJack/Data-UUID/</a></p>
+
+<p>General documentation for Joose: <a href="http://openjsan.org/go/?l=Joose">http://openjsan.org/go/?l=Joose</a></p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>All complex software has bugs lurking in it, and this module is no exception.</p>
+
+<p>Please report any bugs through the web interface at <a href="http://github.com/SamuraiJack/Data-UUID/issues">http://github.com/SamuraiJack/Data-UUID/issues</a></p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Author: Robert Kieffer <a href="&#x6D;&#97;&#105;l&#116;&#x6F;:&#x72;&#111;&#x62;&#x65;&#114;&#x74;&#64;b&#114;&#111;&#111;&#102;a&#x2E;&#99;&#111;m">&#x72;&#111;&#x62;&#x65;&#114;&#x74;&#64;b&#114;&#111;&#111;&#102;a&#x2E;&#99;&#111;m</a></p>
+
+<p>Maintainer: Nickolay Platonov <a href="&#x6D;&#x61;&#x69;&#x6C;&#116;&#111;:&#x6E;&#x70;&#x6C;&#97;&#116;&#x6F;&#110;&#x6F;&#118;&#64;&#99;p&#x61;&#x6E;&#46;&#111;&#x72;g">&#x6E;&#x70;&#x6C;&#97;&#116;&#x6F;&#110;&#x6F;&#118;&#64;&#99;p&#x61;&#x6E;&#46;&#111;&#x72;g</a></p>
+
+<h1 id="copyrightandlicense">COPYRIGHT AND LICENSE</h1>
+
+<p>Copyright (c) 2010 Robert Kieffer</p>
+
+<p>Dual licensed under the MIT and GPL licenses.</p>
+</body>
+</html>
