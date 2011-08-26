@@ -12,8 +12,8 @@ Harness.configure({
     title : 'Data.UUID Test Suite',
 
     preload : [
-        'jsan:Task.Joose.Core',
-        'Data.UUID'
+        '../node_modules/joose/joose-all.js',
+        '../lib/Data/UUID.js'
     ]
 })
 
