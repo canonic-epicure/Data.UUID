@@ -62,15 +62,13 @@ Please report any bugs through the web interface at <http://github.com/SamuraiJa
 AUTHORS
 =======
 
-Author: Robert Kieffer <robert@broofa.com>
-
-Maintainer: Nickolay Platonov <nplatonov@cpan.org>
+Nickolay Platonov <nplatonov@cpan.org>
 
 
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright (c) 2010 Robert Kieffer
+Copyright (c) 2010 Nickolay Platonov
 
 Dual licensed under the MIT and GPL licenses.
